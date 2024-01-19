@@ -1,0 +1,15 @@
+.goal {
+    border-radius: 15px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+    width: 40%;
+    height: 100px;
+    background-color: #8a8a8a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

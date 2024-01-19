@@ -1,0 +1,33 @@
+.window {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.goalsList {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.create {
+    margin-top: 30vh;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1A16D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+.create:hover {
+    transform: rotate(90deg);
+}
+.create img {
+    transform: rotate(45deg);
+}
