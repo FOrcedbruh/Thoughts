@@ -1,6 +1,6 @@
 export default interface GoalType {
-    id: number
+    id?: number
     title: string,
-    complete: boolean,
+    complete?: boolean,
     time: string | number,
 }
