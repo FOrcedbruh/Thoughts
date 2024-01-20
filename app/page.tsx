@@ -5,19 +5,24 @@ import GoalItem from '@/components/GoalItem/GoalItem';
 import Link from 'next/link';
 import Image from 'next/image';
 import cross  from './../images/cross.svg';
-
+import sad from './../images/sad.svg';
 
 
 const Page: React.FC = () => {
 
     const { goals } = useAppSelector(state => state.CreateGoalSlice);
-
-    console.log(goals);
     
     return (
         <section className={styles.window}>
             <div className={styles.goalsList}>
-                {goals.length === 0 && <GoalItem text='No goals yet'></GoalItem>}
+                {goals.length === 0 && <GoalItem text='No goals yet(' sadImg={sad}></GoalItem>}
+                {goals.length > 0 && <>
+                    {goals.map(goal => {
+                        return (
+                            <GoalItem goal={goal} key={goal.id}/>
+                        )
+                    })}
+                </>}
             </div>
             <Link href={'/form'}>
                 <div className={styles.create}>

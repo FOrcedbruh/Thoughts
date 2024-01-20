@@ -7,39 +7,13 @@ import arrow from './../../images/arrow_2.svg'
 import { useAppDispatch } from "@/hooks/ReducerTypeHook";
 import { create } from "../store/reducers/CreateGoalSlice";
 import GoalType from "@/types/GoalType";
+import { colors } from "@/components/Colors/Colors";
 
 
 
-interface ColorsType {
-    text: string,
-    bg: string
-}
-interface DateColorstype {
-    Day: ColorsType,
-    Week: ColorsType,
-    Month: ColorsType,
-    Year: ColorsType
-}
 
 
-const colors: DateColorstype = {
-    Day: {
-        text: '#000',
-        bg: '#86C2FA'
-    },
-    Week: {
-        text: '#000',
-        bg: '#1658BC'
-    },
-    Month: {
-        text: '#fff',
-        bg: '#1A16D4'
-    },
-    Year: {
-        text: '#fff',
-        bg: '#131180'
-    }
-}
+
 
 
 

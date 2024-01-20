@@ -1,0 +1,33 @@
+.window {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: calc(100vh - 200px);
+    background-color: #c9c9c9;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding: 60px 20px;
+    transition: background .8s ease;
+}
+.timeDiv {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.timeDiv h1 {
+    color: #ECE3CA;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

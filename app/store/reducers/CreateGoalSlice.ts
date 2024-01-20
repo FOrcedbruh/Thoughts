@@ -17,7 +17,7 @@ const CreateGoalSlice = createSlice({
     reducers: {
         create(state, action: PayloadAction<GoalType>) {
             state.goals.push(action.payload);
-            action.payload.id = state.goals.length - 1;
+            action.payload.id = state.goals.length;
             action.payload.complete = false;
         },
         deleteGoal(state, action: PayloadAction<number>) {
@@ -27,9 +27,12 @@ const CreateGoalSlice = createSlice({
                     }
             })
         },
+        completeGoal(state ,action: PayloadAction<number>) {
+            state.goals[action.payload].complete = true
+        }
     }
 })
 
-export const { create, deleteGoal } = CreateGoalSlice.actions;
+export const { create, deleteGoal, completeGoal } = CreateGoalSlice.actions;
 export default CreateGoalSlice.reducer;
 

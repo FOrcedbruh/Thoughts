@@ -4,12 +4,54 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    color: #000;
+    color: #fff;
     width: 40%;
     height: 100px;
-    background-color: #8a8a8a;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.goal h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+.goal h3 {
+    color: #ECE3CA;
+}
+.innerGoalItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.innerGoalItem button {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.innerGoalItem button img {
+    width: 90%;
+    height: 90%;
+}
+.Btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.noGoals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }

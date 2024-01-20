@@ -6,16 +6,22 @@
     align-items: center;
     flex-direction: column;
 }
+.window a {
+    margin-top: 30vh;
+    width: 60px;
+    height: 60px;
+}
 .goalsList {
     width: 80%;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
+    gap: 30px;
 }
 .create {
-    margin-top: 30vh;
+    
     width: 60px;
     height: 60px;
     border-radius: 50%;
