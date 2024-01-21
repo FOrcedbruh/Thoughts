@@ -1,11 +1,11 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import CreateGoalSlice from "./reducers/CreateGoalSlice";
-
-
+import CompleteGoalSlice from "./reducers/CompleteGoalSlice";
 
 
 const rootReducer = combineReducers({
-    CreateGoalSlice: CreateGoalSlice
+    CreateGoalSlice: CreateGoalSlice,
+    CompleteGoalSlice: CompleteGoalSlice
 });
 
 

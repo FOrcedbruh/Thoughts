@@ -29,15 +29,16 @@ export default function RootLayout({
   return (
     
     <html lang="en">
-      
         <body className={inter.className}>
+          <ReduxProviders>
             <Header />
             <main className='wrapper'>
-            <ReduxProviders>
-              {children}
-            </ReduxProviders>
+              
+                {children}
+            
             </main>
-          </body>
+          </ReduxProviders>
+        </body>
     </html>
   )
 }

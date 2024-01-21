@@ -15,7 +15,7 @@ const Page: React.FC = () => {
     return (
         <section className={styles.window}>
             <div className={styles.goalsList}>
-                {goals.length === 0 && <GoalItem text='No goals yet(' sadImg={sad}></GoalItem>}
+                {goals.length === 0 && <GoalItem goal={{title: '', time: ''}} text='No goals yet' sadImg={sad}></GoalItem>}
                 {goals.length > 0 && <>
                     {goals.map(goal => {
                         return (

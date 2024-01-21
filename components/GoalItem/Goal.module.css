@@ -16,6 +16,7 @@
 .goal h2 a {
     text-decoration: none;
     color: #fff;
+    min-width: 100px;
 }
 .goal h3 {
     color: #ECE3CA;
