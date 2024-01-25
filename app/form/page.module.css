@@ -11,6 +11,7 @@
     transition: background .8s ease;
 }
 .window textarea {
+    min-width: 100px;
     background: transparent ;
     width: 70%;
     height: 100%;
@@ -23,6 +24,7 @@
     transition: color .5s ease;
 }
 .timeDiv {
+    min-width: 140px;
     width: 200px;
     height: 60px;
     display: flex;
@@ -65,3 +67,29 @@
 .createBtn:hover {
     gap: 50px
 }
+
+@media only screen and (max-width: 1000px) {
+    .window textarea {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .window textarea {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .window textarea {
+        width: 42%;
+        font-size: 16px;
+    }
+    .window {
+        gap: 40px
+    }
+    .timeDiv input {
+        font-size: 26px;
+    }
+    .createLink {
+        margin-right: 200%;
+    }
+} 

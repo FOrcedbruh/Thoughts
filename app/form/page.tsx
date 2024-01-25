@@ -62,7 +62,7 @@ const Form: React.FC = () => {
                     <h3>goal for the</h3>
                     <input type="text" name="time" value={timeValue} onChange={e => onChangeTime(e)}/>
                 </div>
-                {title && <Link href={'/'}>
+                {title && <Link className={styles.createLink} href={'/'}>
                     <button className={styles.createBtn} onClick={createHandle}>
                         Create thought <Image src={arrow} alt="arrow" width={30} height={30}/>
                     </button>

@@ -4,13 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .window ul {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     list-style: none;
+    padding: 0;
+    gap: 20px;
 }
 .window ul li {
     width: 30%;
@@ -32,4 +36,28 @@
 .window ul li article a {
     color: #fff;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1450px) {
+    .window ul li {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .window ul li {
+        width: 80%;
+    }
+    .window ul li article a h2{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .window ul li {
+        width: 100%;
+    }
+    .window ul li article a h2 {
+        font-size: 14px;
+    }
 }

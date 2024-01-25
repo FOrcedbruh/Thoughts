@@ -56,3 +56,30 @@
     align-items: center;
     gap: 100px;
 }
+
+@media only screen and (max-width: 1450px) {
+    .goal {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .goal {
+        width: 80%;
+    }
+    .goal h2 a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .goal {
+        width: 100%;
+    }
+    .goal h2 a {
+        font-size: 14px;
+    }
+    .noGoals h2 {
+        font-size: 14px;
+    }
+}

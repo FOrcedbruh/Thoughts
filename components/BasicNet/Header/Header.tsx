@@ -1,13 +1,17 @@
+'use client'
 import styles from './Header.module.css';
 import Link from 'next/link';
-
-
+import { useSession } from 'next-auth/react';
 
 
 
 
 const Header: React.FC = () => {
 
+    const session = useSession();
+
+
+    console.log(session);
 
     return (
         <header className={styles.header}>
