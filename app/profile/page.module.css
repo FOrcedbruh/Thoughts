@@ -1,0 +1,17 @@
+.window {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    color: #fff;
+}
+.window h1 {
+    font-size: 26px;
+}
+
+.window h2 {
+    font-size: 20px;
+}

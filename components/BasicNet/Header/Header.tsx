@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 import Link from 'next/link';
 import { useSession } from 'next-auth/react';
 import { signIn, signOut } from 'next-auth/react';
-import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 
 const Header: React.FC = () => {
@@ -25,6 +25,11 @@ const Header: React.FC = () => {
         })
     }
 
+
+    const router = useRouter();
+
+
+
     const Avatar = session.data?.user?.image as string
 
     return (
@@ -34,7 +39,7 @@ const Header: React.FC = () => {
             <div className={styles.accountActions}>
                 {session.data?.user?.email ? <Link href={'#'} onClick={signoutHandle}>SignOut</Link> : <Link href={'/api/auth/signin'}>Sign in</Link>}
             </div>
-            {Avatar && <img className={styles.avatar} src={Avatar} alt="" />}
+            {Avatar && <img onClick={() => router.push('/profile')} className={styles.avatar} src={Avatar} alt="" />}
         </header>
     )
 }
